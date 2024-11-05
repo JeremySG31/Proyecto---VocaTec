@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Error</title>
+    <style>
+        .error-message {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Proyecto</h1>
+    <div id="content">
+        <!-- Contenido de tu proyecto -->
+    </div>
+    <div id="error" class="error-message">
+        Error: No se pudo cargar el contenido.
+    </div>
+
+    <script>
+        // Simulación de un error
+        function simulateError() {
+            const errorMessage = document.getElementById('error');
+            errorMessage.style.display = 'block';
+        }
+
+        // Llamar a la función para simular un error
+        simulateError();
+    </script>
+</body>
+</html>
